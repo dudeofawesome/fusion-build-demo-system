@@ -1,0 +1,37 @@
+name: 'Java (demo build system)'
+extensions: [
+    '.java'
+]
+commandSequence: [
+    {
+        command: 'javac'
+        arguments: ['-cp', '.', '{{file}}']
+    }
+]
+variants: [
+    run: {
+        commandSequence: [
+            {
+                command: 'java'
+                arguments: ['-cp', '.', '{{file_base_name}}']
+            }
+        ]
+    }
+    package: {
+        commandSequence: [
+            {
+                command: 'jar'
+                arguments: ['-cvfm', '{{project_name}}.jar', '*.mf *.class */*.* *.txt']
+            }
+        ]
+    }
+    other: {
+        [
+            {
+                name: 'Clear .class\'es'
+                command: 'rm'
+                arguments: ['*.class']
+            }
+        ]
+    }
+]

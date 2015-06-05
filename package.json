@@ -1,0 +1,15 @@
+{
+  "name": "fusion-build-demo-system",
+  "main": "./lib/fusion-build",
+  "version": "1.0.0",
+  "description": "A demo of an extension build system for Fusion",
+  "keywords": [
+  ],
+  "repository": "https://github.com/dudeofawesome/fusion-build-demo-system",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
