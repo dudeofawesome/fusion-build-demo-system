@@ -8,7 +8,7 @@ commandSequence: [
         arguments: ['-cp', '.', '{{file}}']
     }
 ]
-variants: [
+variants: {
     run: {
         commandSequence: [
             {
@@ -34,4 +34,4 @@ variants: [
             }
         ]
     }
-]
+}
