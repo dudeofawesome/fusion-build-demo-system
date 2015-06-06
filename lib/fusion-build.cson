@@ -25,13 +25,11 @@ variants: {
             }
         ]
     }
-    other: {
-        [
-            {
-                name: 'Clear .class\'es'
-                command: 'rm'
-                arguments: ['*.class']
-            }
-        ]
-    }
+    other: [
+        {
+            name: 'Clear .class\'es'
+            command: 'rm'
+            arguments: ['*.class']
+        }
+    ]
 }
